@@ -1,0 +1,1077 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.45f1 (0da89fac8e79) revision 895135'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'es' Physical Memory: 16221 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.45f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/Samuel Salazar/My project
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49243
+Successfully changed project path to: C:/Users/Samuel Salazar/My project
+C:/Users/Samuel Salazar/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [6596] Host "[IP] 192.168.1.70 [Port] 0 [Flags] 2 [Guid] 2310828315 [EditorId] 2310828315 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-C0LD890) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [6596] Host "[IP] 192.168.1.70 [Port] 0 [Flags] 2 [Guid] 2310828315 [EditorId] 2310828315 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-C0LD890) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 123.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.45f1 (0da89fac8e79)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.45f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Samuel Salazar/My project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   NVIDIA
+    VRAM:     3935 MB
+    Driver:   32.0.15.7216
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.45f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.45f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.45f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014063 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 123.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.179 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1180ms)
+		BeginReloadAssembly (186ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (805ms)
+			LoadAssemblies (180ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (188ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (485ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (123ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (258ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009838 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 120.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  2.947 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2949ms)
+		BeginReloadAssembly (235ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (2491ms)
+			LoadAssemblies (188ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (579ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (1576ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (120ms)
+				BeforeProcessingInitializeOnLoad (151ms)
+				ProcessInitializeOnLoadAttributes (1109ms)
+				ProcessInitializeOnLoadMethodAttributes (164ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4200 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (2.0 MB). Loaded Objects now: 4665.
+Memory consumption went from 168.8 MB to 166.8 MB.
+Total: 8.791600 ms (FindLiveObjects: 0.592400 ms CreateObjectMapping: 0.751000 ms MarkObjects: 6.317400 ms  DeleteObjects: 1.128600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11806.987985 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign traffic signals.prefab
+  artifactKey: Guid(d5d6b568fc8fcf349a5c14a79bd0fe14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign traffic signals.prefab using Guid(d5d6b568fc8fcf349a5c14a79bd0fe14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd9b65e3876fa8741b673455dbc1ccd') in 0.308976 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign loose chippings.prefab
+  artifactKey: Guid(7d2aed017631a754c8dc4b8925aed83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign loose chippings.prefab using Guid(7d2aed017631a754c8dc4b8925aed83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034753ce64c2220e050e19d5111c251c') in 0.059144 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign sharp bend to the left.prefab
+  artifactKey: Guid(886e304f84fa25a44be891770600988d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign sharp bend to the left.prefab using Guid(886e304f84fa25a44be891770600988d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7016165f4a8c279215fbc6a8ca9ad5f2') in 0.055751 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign unproteceted quayside.prefab
+  artifactKey: Guid(9591addf37d054441b8eacd51f889557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign unproteceted quayside.prefab using Guid(9591addf37d054441b8eacd51f889557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cdfe0f96272fad0bf3da856dfd0c03f') in 0.049845 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign steep hill upwards.prefab
+  artifactKey: Guid(a7561e41a251fc14a9afd448964af5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign steep hill upwards.prefab using Guid(a7561e41a251fc14a9afd448964af5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4a6b03969ee8d624a54bfeff1ad436') in 0.069003 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign danger red.prefab
+  artifactKey: Guid(f7b1912c776817f488246b48bc34ab0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign danger red.prefab using Guid(f7b1912c776817f488246b48bc34ab0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd60dcbbd3673c68c8163b86ef4f1344') in 0.059150 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign sharp bend to the right.prefab
+  artifactKey: Guid(fb9967550fcfed8448d0bb653c095f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign sharp bend to the right.prefab using Guid(fb9967550fcfed8448d0bb653c095f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a768db0df0f6f916effed0116a44b0dc') in 0.061475 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign ferry.prefab
+  artifactKey: Guid(3fdbecb0490888d408e3c71db43e7b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign ferry.prefab using Guid(3fdbecb0490888d408e3c71db43e7b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebfbb9401a703dcbe2074e45d76c73ca') in 0.071908 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign radioactive.prefab
+  artifactKey: Guid(94ae866a013835f48ab0d05e7bd69911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign radioactive.prefab using Guid(94ae866a013835f48ab0d05e7bd69911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d22b6275be923ec36e5ed03c75bff75') in 0.054690 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign railway with gate.prefab
+  artifactKey: Guid(31b5d72ea2ba49d43847d72945993a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign railway with gate.prefab using Guid(31b5d72ea2ba49d43847d72945993a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6528288c601c964fb07eb013f478f6f') in 0.055244 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign pedestrian crossing.prefab
+  artifactKey: Guid(eb0d8770e8390fa479918759eef07bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign pedestrian crossing.prefab using Guid(eb0d8770e8390fa479918759eef07bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df6bad3001f4a39d42b8e137fe37843') in 0.054522 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign roadworks.prefab
+  artifactKey: Guid(8d19b839766d8344ab7e1644b0c86eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign roadworks.prefab using Guid(8d19b839766d8344ab7e1644b0c86eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a38b43cdf20942e3bfc552270de62d7e') in 0.051313 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign road narrows on both sides.prefab
+  artifactKey: Guid(c2537764105bdea4da0523dc63af83c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign road narrows on both sides.prefab using Guid(c2537764105bdea4da0523dc63af83c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4b1cde456438d5d4d0ea4bf83e30be') in 0.046107 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign roundabout.prefab
+  artifactKey: Guid(fd030dc97bec56049bffb1cd05a69190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign roundabout.prefab using Guid(fd030dc97bec56049bffb1cd05a69190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197870caaa514b04d0bbd8886fffb37d') in 0.056171 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign crossroad 01.prefab
+  artifactKey: Guid(9b4142f9d1927ff4795d0787ab88d65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign crossroad 01.prefab using Guid(9b4142f9d1927ff4795d0787ab88d65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea0842614845ef955070acdb67a7570b') in 0.048575 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign slippery floor.prefab
+  artifactKey: Guid(a0c38e71a2259fd469a87bd96b603337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign slippery floor.prefab using Guid(a0c38e71a2259fd469a87bd96b603337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623964b1b37f18793a878fa684cd7227') in 0.050916 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign traffic merges right.prefab
+  artifactKey: Guid(c0dbdd6eab872454ca3d12ec04622ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign traffic merges right.prefab using Guid(c0dbdd6eab872454ca3d12ec04622ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a64ff9b16ab481a14b44e44fa611b3') in 0.047608 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign traffic merges left.prefab
+  artifactKey: Guid(192d2bc9429c3b94e9b663ae16dc3f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign traffic merges left.prefab using Guid(192d2bc9429c3b94e9b663ae16dc3f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d879f06564ebc2f0b1fb46f7e61b9bf') in 0.049826 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign double bend - right.prefab
+  artifactKey: Guid(5f00ed77a90c02442b3112d5cea132cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign double bend - right.prefab using Guid(5f00ed77a90c02442b3112d5cea132cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51b6d0d713c28bc9b2a01a112bd2fcaa') in 0.044702 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign crossroad 02.prefab
+  artifactKey: Guid(6f10d3a3812dfb1409cba9b20ffecc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign crossroad 02.prefab using Guid(6f10d3a3812dfb1409cba9b20ffecc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c356dd52694dd942f6c24ba37573a85c') in 0.064917 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign checkpoint.prefab
+  artifactKey: Guid(8545197a5116aca4db11e5093fb0e017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign checkpoint.prefab using Guid(8545197a5116aca4db11e5093fb0e017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1252b46d4a3814fed70cff65e08f8c6') in 0.053119 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign non-ionizing radiation.prefab
+  artifactKey: Guid(0314b57f34c56444b8d5e0a0d219e78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign non-ionizing radiation.prefab using Guid(0314b57f34c56444b8d5e0a0d219e78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a407efca0c1cdb55064ce795d96a5c33') in 0.053967 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign uneven road.prefab
+  artifactKey: Guid(2c7fb46b7ae738949a5dabdf5891a98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign uneven road.prefab using Guid(2c7fb46b7ae738949a5dabdf5891a98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e19a684541628253dfadf84eac8fb601') in 0.055888 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/sign pillars/sign pillar black.prefab
+  artifactKey: Guid(75700602496dcac4eb15f19c429121f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/sign pillars/sign pillar black.prefab using Guid(75700602496dcac4eb15f19c429121f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf959cec0a0844b9e6e269ba893cb366') in 0.036590 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign road hump.prefab
+  artifactKey: Guid(33b56d3d650931f49b57544baafe8f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign road hump.prefab using Guid(33b56d3d650931f49b57544baafe8f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0d45259bd5854a3ebd7620203992ae') in 0.049727 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign danger black.prefab
+  artifactKey: Guid(1f7e84d9315825940835da51bd51b37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign danger black.prefab using Guid(1f7e84d9315825940835da51bd51b37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161b019b3bb3c0979a7405647d9f25b9') in 0.046640 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign Y-junction.prefab
+  artifactKey: Guid(bb497d24f5dc2a044b0ce71e265b527e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign Y-junction.prefab using Guid(bb497d24f5dc2a044b0ce71e265b527e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9719bf74620ae0ce480f1d5f3980fedc') in 0.058637 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign double bend - left.prefab
+  artifactKey: Guid(182b5ff088c22e74a857440d86e8ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign double bend - left.prefab using Guid(182b5ff088c22e74a857440d86e8ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a4f2783eb06ca5fa9150998aec36f9') in 0.062930 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign staggered junction 01.prefab
+  artifactKey: Guid(0b15c40aacabcc64d80d90ef217cbe92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign staggered junction 01.prefab using Guid(0b15c40aacabcc64d80d90ef217cbe92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e6916d5c8592a4e910ba8c947496f54') in 0.067579 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign biohazard.prefab
+  artifactKey: Guid(da1ab7c6a17b69c47bb73b641ffea4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign biohazard.prefab using Guid(da1ab7c6a17b69c47bb73b641ffea4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39db6275fed7910543118b84c2b9c65f') in 0.049290 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign dual carriage way ends.prefab
+  artifactKey: Guid(d112e688129f2d34ba2df905995ca6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs/banner sign dual carriage way ends.prefab using Guid(d112e688129f2d34ba2df905995ca6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb2408b5e891224f50ea360ea3ecea7') in 0.063241 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 4.622566 seconds.
+  path: Assets/Holotna/Mountain/Scenes/Demo/Lightmap-12_comp_dir.png
+  artifactKey: Guid(f8047024bf6a6c44c821225bf6252772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Holotna/Mountain/Scenes/Demo/Lightmap-12_comp_dir.png using Guid(f8047024bf6a6c44c821225bf6252772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24ba721fea040319c06575e0a3c17c8') in 0.141046 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Holotna/Mountain/Scenes/Demo/Lightmap-13_comp_shadowmask.png
+  artifactKey: Guid(fa8def018a93ea146a83daa7d0bb0786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Holotna/Mountain/Scenes/Demo/Lightmap-13_comp_shadowmask.png using Guid(fa8def018a93ea146a83daa7d0bb0786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ccb28227b1e51926778b9a5cbbc457') in 0.043398 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Holotna/Mountain/Scenes/Demo/Lightmap-12_comp_shadowmask.png
+  artifactKey: Guid(2910618ef8ae5e14a8900000f9f210dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Holotna/Mountain/Scenes/Demo/Lightmap-12_comp_shadowmask.png using Guid(2910618ef8ae5e14a8900000f9f210dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e0430422115e455f05dcb891df452b') in 0.037068 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Holotna/Mountain/Scenes/Demo/Lightmap-13_comp_light.exr
+  artifactKey: Guid(052024e73f680a54d887fda06e50dd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Holotna/Mountain/Scenes/Demo/Lightmap-13_comp_light.exr using Guid(052024e73f680a54d887fda06e50dd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6d8e18e1f8e8b5a4ec16c642da0cf9') in 0.038689 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 135.887332 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Materials/solid colors/grey.mat
+  artifactKey: Guid(6729f1a0d936598438f93c0b6bd7ee76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Materials/solid colors/grey.mat using Guid(6729f1a0d936598438f93c0b6bd7ee76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b3ebb0eec214bbdb8795af2d354812') in 0.060536 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.236371 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign blind persons pillar.prefab
+  artifactKey: Guid(ed072a884f445154e97fae482a0833d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign blind persons pillar.prefab using Guid(ed072a884f445154e97fae482a0833d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a1af4341a794cff21b6711717292ac') in 0.037113 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign dual carriage way ends pillar.prefab
+  artifactKey: Guid(b5565aedb89925d4e858691257fd4bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign dual carriage way ends pillar.prefab using Guid(b5565aedb89925d4e858691257fd4bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fba9d4dfd41665781aeb438e14e98a19') in 0.027318 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign side road on the left pillar.prefab
+  artifactKey: Guid(103d5a0cbe2776244a14c89a96117311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign side road on the left pillar.prefab using Guid(103d5a0cbe2776244a14c89a96117311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc65e7cb0a3f8031e045cd7f33fd675') in 0.030426 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign checkpoint pillar.prefab
+  artifactKey: Guid(b6d2459e455f55c4eb7e0f5682742fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign checkpoint pillar.prefab using Guid(b6d2459e455f55c4eb7e0f5682742fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e249512bcccced4cfb735c79b0089d') in 0.027768 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign double bend - right pillar.prefab
+  artifactKey: Guid(ae36dbf5daf9996429a334267ff7208c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign double bend - right pillar.prefab using Guid(ae36dbf5daf9996429a334267ff7208c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d328a06840777e1ec2b7bfa34559a88') in 0.027573 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign hairpin - left pillar.prefab
+  artifactKey: Guid(2fed46bf73711a64dae5cdf777320096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign hairpin - left pillar.prefab using Guid(2fed46bf73711a64dae5cdf777320096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2985a66b103d41c7c08d8c5a6bc58ca') in 0.027186 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign narrow bridge pillar.prefab
+  artifactKey: Guid(1625fbf749e288e4987360b466e301c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign narrow bridge pillar.prefab using Guid(1625fbf749e288e4987360b466e301c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1615a5614f0f41d5fbbc3df5862a13f') in 0.025444 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign side road on the right pillar.prefab
+  artifactKey: Guid(61e0cb3f60fa4904196cec044e1d4ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign side road on the right pillar.prefab using Guid(61e0cb3f60fa4904196cec044e1d4ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6839596fbba4655659eecec039abb918') in 0.027254 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign double bend - left pillar.prefab
+  artifactKey: Guid(c6ac9849dd3bf624fa686094634c08b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign double bend - left pillar.prefab using Guid(c6ac9849dd3bf624fa686094634c08b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c287648d68e8c593a78ce736c8fab0') in 0.030411 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign road narrows on both sides pillar.prefab
+  artifactKey: Guid(b7601e675eb495e4e9d20b4527267564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign road narrows on both sides pillar.prefab using Guid(b7601e675eb495e4e9d20b4527267564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc191328f93d55184101c4f3db702adf') in 0.031688 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign dangerous dip pillar.prefab
+  artifactKey: Guid(ded5d97cac4e7204ab36d7264ae4dd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign dangerous dip pillar.prefab using Guid(ded5d97cac4e7204ab36d7264ae4dd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06332548b756e1a3ff8f7f2cc119a3fd') in 0.026836 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign dangerous shoulder pillar.prefab
+  artifactKey: Guid(34099300c0d15cc4a90eb120faf1cd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign dangerous shoulder pillar.prefab using Guid(34099300c0d15cc4a90eb120faf1cd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e7037a4540bac2b5ab42918fb49ac1') in 0.030269 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign low-flying aircraft pillar.prefab
+  artifactKey: Guid(63884a47a2c1afb43822ec6fe22a93a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign low-flying aircraft pillar.prefab using Guid(63884a47a2c1afb43822ec6fe22a93a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f63947be47304de6580c2b6bd132660d') in 0.029973 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign sign toxic pillar.prefab
+  artifactKey: Guid(2e4500bb93388004fa3a74fbde55fe72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign sign toxic pillar.prefab using Guid(2e4500bb93388004fa3a74fbde55fe72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '850bb39f68f5400c5ac7f73a3cf1a729') in 0.026851 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign danger black pillar.prefab
+  artifactKey: Guid(4d39165abfdb8c44c99e0a508060ad47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign danger black pillar.prefab using Guid(4d39165abfdb8c44c99e0a508060ad47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be74f559071f89bc7a6f4efdfec91f4e') in 0.027684 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign slippery floor pillar.prefab
+  artifactKey: Guid(5332aaf1eabfaef4a8e6aa676b0fe341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign slippery floor pillar.prefab using Guid(5332aaf1eabfaef4a8e6aa676b0fe341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d415d6a25fc12c9fe3a2a2eef2b6b96') in 0.028252 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign falling rocks left pillar.prefab
+  artifactKey: Guid(b828e6d871878874780c43ab04f057e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign falling rocks left pillar.prefab using Guid(b828e6d871878874780c43ab04f057e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a89f430f85a9c89057fb1d5216424a8') in 0.027790 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign loose chippings pillar.prefab
+  artifactKey: Guid(e426dec0389ac614682cfbd5d3f2e787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign loose chippings pillar.prefab using Guid(e426dec0389ac614682cfbd5d3f2e787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8acb67e2666429aa172842f8b4242cce') in 0.031379 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign sharp bend to the left pillar.prefab
+  artifactKey: Guid(099c5da3329f4cc499fd78eea712ef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign sharp bend to the left pillar.prefab using Guid(099c5da3329f4cc499fd78eea712ef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7767d339b142d42dce0bf98eb8841c04') in 0.033268 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign ferry pillar.prefab
+  artifactKey: Guid(7ee46f3b98f4def4696fb6b6b61edfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign ferry pillar.prefab using Guid(7ee46f3b98f4def4696fb6b6b61edfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8ac8cfa8585b3f9d77ed91a401ca9d') in 0.029149 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign hairpin - right pillar.prefab
+  artifactKey: Guid(4d373adc5d4dc0346969d14059102898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign hairpin - right pillar.prefab using Guid(4d373adc5d4dc0346969d14059102898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ce7c0f9292eb89dc6f36467dbd8dab') in 0.026413 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign flammable pillar.prefab
+  artifactKey: Guid(3d39b7b1dfdc1414cabf95b4574370ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign flammable pillar.prefab using Guid(3d39b7b1dfdc1414cabf95b4574370ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ce7ee28c9f270345696edc94c6e62f') in 0.024931 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign cycles-rickshaws pillar.prefab
+  artifactKey: Guid(25fc246217cd72548af78da033f4a56b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign cycles-rickshaws pillar.prefab using Guid(25fc246217cd72548af78da033f4a56b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8108642c6c031f9fd30e17c33660bf85') in 0.026621 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 2.336623 seconds.
+  path: Assets/Holotna/Mountain/Misc/Ground01.terrainlayer
+  artifactKey: Guid(a81995a1b9792014b8df74c003aef209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Holotna/Mountain/Misc/Ground01.terrainlayer using Guid(a81995a1b9792014b8df74c003aef209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9809e806763aa6838c982e5418e3fa83') in 0.042936 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009959 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  3.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3173ms)
+		BeginReloadAssembly (300ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (80ms)
+		EndReloadAssembly (2675ms)
+			LoadAssemblies (206ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (660ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (92ms)
+			SetupLoadedEditorAssemblies (1684ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (147ms)
+				ProcessInitializeOnLoadAttributes (1368ms)
+				ProcessInitializeOnLoadMethodAttributes (130ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (2.0 MB). Loaded Objects now: 4715.
+Memory consumption went from 167.6 MB to 165.6 MB.
+Total: 8.459800 ms (FindLiveObjects: 0.766900 ms CreateObjectMapping: 0.650600 ms MarkObjects: 6.408200 ms  DeleteObjects: 0.631800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009866 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  2.484 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2486ms)
+		BeginReloadAssembly (289ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (2001ms)
+			LoadAssemblies (197ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (497ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (1217ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (946ms)
+				ProcessInitializeOnLoadMethodAttributes (107ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (2.0 MB). Loaded Objects now: 4718.
+Memory consumption went from 167.6 MB to 165.6 MB.
+Total: 7.774800 ms (FindLiveObjects: 0.719200 ms CreateObjectMapping: 0.595100 ms MarkObjects: 5.917700 ms  DeleteObjects: 0.540900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016388 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  2.702 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2703ms)
+		BeginReloadAssembly (276ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (2239ms)
+			LoadAssemblies (191ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (513ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (1460ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (135ms)
+				ProcessInitializeOnLoadAttributes (1177ms)
+				ProcessInitializeOnLoadMethodAttributes (118ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (2.0 MB). Loaded Objects now: 4721.
+Memory consumption went from 167.6 MB to 165.6 MB.
+Total: 7.949200 ms (FindLiveObjects: 0.527300 ms CreateObjectMapping: 0.516400 ms MarkObjects: 6.350600 ms  DeleteObjects: 0.552900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 322.882687 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign roadworks pillar.prefab
+  artifactKey: Guid(d9e281206049b044ead254987cd30a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Prefabs/signs with pillar/sign roadworks pillar.prefab using Guid(d9e281206049b044ead254987cd30a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe01787aa9abcdd1f8cc7594b8928fa5') in 0.162599 seconds 
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011060 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  3.071 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3072ms)
+		BeginReloadAssembly (287ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (2558ms)
+			LoadAssemblies (209ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (627ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (93ms)
+			SetupLoadedEditorAssemblies (1585ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (145ms)
+				ProcessInitializeOnLoadAttributes (1272ms)
+				ProcessInitializeOnLoadMethodAttributes (134ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (2.0 MB). Loaded Objects now: 4724.
+Memory consumption went from 167.6 MB to 165.6 MB.
+Total: 8.142500 ms (FindLiveObjects: 0.554000 ms CreateObjectMapping: 0.573000 ms MarkObjects: 6.373300 ms  DeleteObjects: 0.640300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009594 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  2.584 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2585ms)
+		BeginReloadAssembly (286ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (2121ms)
+			LoadAssemblies (198ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (536ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (1286ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (1026ms)
+				ProcessInitializeOnLoadMethodAttributes (111ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (2.0 MB). Loaded Objects now: 4727.
+Memory consumption went from 167.7 MB to 165.6 MB.
+Total: 8.192600 ms (FindLiveObjects: 0.589700 ms CreateObjectMapping: 0.710200 ms MarkObjects: 6.276000 ms  DeleteObjects: 0.615100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010248 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  3.039 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3040ms)
+		BeginReloadAssembly (260ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (2599ms)
+			LoadAssemblies (188ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (531ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (1768ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (1475ms)
+				ProcessInitializeOnLoadMethodAttributes (130ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (2.0 MB). Loaded Objects now: 4730.
+Memory consumption went from 167.7 MB to 165.6 MB.
+Total: 8.688900 ms (FindLiveObjects: 0.566200 ms CreateObjectMapping: 0.642000 ms MarkObjects: 6.931600 ms  DeleteObjects: 0.547300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 209.873486 seconds.
+  path: Assets/Ghost Zone/3D Cartoon Road Warning Signs/Materials/materials with texture/sign falling rocks right.mat
+  artifactKey: Guid(2fb9e3a548734c2458021b69aab8a545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Ghost Zone/3D Cartoon Road Warning Signs/Materials/materials with texture/sign falling rocks right.mat using Guid(2fb9e3a548734c2458021b69aab8a545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93cd94a6e482e02de515aa912107d57d') in 0.116853 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 146.416526 seconds.
+  path: Assets/Holotna/Mountain/Prefabs/Rock02.prefab
+  artifactKey: Guid(6f2d6d8548dbc9042a8d8e45da4332ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Holotna/Mountain/Prefabs/Rock02.prefab using Guid(6f2d6d8548dbc9042a8d8e45da4332ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d535b21f99f7693e43a2418bd5030f') in 0.128295 seconds 
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014335 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  2.490 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2491ms)
+		BeginReloadAssembly (287ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (2011ms)
+			LoadAssemblies (205ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (501ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (1234ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (959ms)
+				ProcessInitializeOnLoadMethodAttributes (111ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (2.0 MB). Loaded Objects now: 4733.
+Memory consumption went from 167.7 MB to 165.7 MB.
+Total: 8.440200 ms (FindLiveObjects: 0.599000 ms CreateObjectMapping: 0.501300 ms MarkObjects: 6.827300 ms  DeleteObjects: 0.510600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
