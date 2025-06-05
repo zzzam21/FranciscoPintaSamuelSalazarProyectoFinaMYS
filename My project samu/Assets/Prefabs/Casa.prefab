@@ -1582,6 +1582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 6853053418772747310}
     - target: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_Name
       value: Viga (11)
