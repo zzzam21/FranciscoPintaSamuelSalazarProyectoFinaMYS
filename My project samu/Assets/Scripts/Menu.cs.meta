@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 8fe548ddc7c651442bff620303e7449d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - leveToggle: {instanceID: 0}
+  - medioToggle: {instanceID: 0}
+  - fuerteToggle: {instanceID: 0}
+  - maderaToggle: {instanceID: 0}
+  - hormigonToggle: {instanceID: 0}
+  - metalToggle: {instanceID: 0}
+  - casaToggle: {instanceID: 0}
+  - almacenToggle: {instanceID: 0}
+  - edificioToggle: {instanceID: 0}
+  - casaPrefab: {fileID: 2078866545090720413, guid: 08f328029a1aad14a9023309ac9c19d5, type: 3}
+  - almacenPrefab: {fileID: 8205972577778465543, guid: 693df907ac295fa478b3f40f82b8ef19, type: 3}
+  - edificioPrefab: {fileID: 1769178339674071608, guid: 8973ba076e81a2d489e5e97d7357da2d, type: 3}
+  - simulador: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
