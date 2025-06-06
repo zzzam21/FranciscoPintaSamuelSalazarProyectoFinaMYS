@@ -1,12 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 
 public class simuladorSismo : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     private Vector3 posicionInicial;
     private float tiempo;
     private Rigidbody rb;
@@ -18,6 +13,12 @@ public class simuladorSismo : MonoBehaviour
     private float frecuenciaObjetivo;
 
     public float velocidadTransicion = 2f;
+    private bool sismoActivo = false;
+    private float duracionSismo = 10f;
+    private float tiempoTranscurrido = 0f;
+    
+    public delegate void DañoEstructuralHandler(float valorDaño);
+    public static event DañoEstructuralHandler OnDañoEstructural;
 
     void Start()
     {
@@ -28,14 +29,22 @@ public class simuladorSismo : MonoBehaviour
         frecuenciaActual = 0f;
         amplitudObjetivo = 0f;
         frecuenciaObjetivo = 0f;
+        sismoActivo = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        tiempo += Time.deltaTime;
+        if (!sismoActivo) return;
 
-        // Transici�n suave usando Lerp
+        tiempo += Time.deltaTime;
+        tiempoTranscurrido += Time.deltaTime;
+
+        if (tiempoTranscurrido >= duracionSismo)
+        {
+            DetenerSismo();
+            return;
+        }
+
         amplitudActual = Mathf.Lerp(amplitudActual, amplitudObjetivo, Time.deltaTime * velocidadTransicion);
         frecuenciaActual = Mathf.Lerp(frecuenciaActual, frecuenciaObjetivo, Time.deltaTime * velocidadTransicion);
 
@@ -44,7 +53,25 @@ public class simuladorSismo : MonoBehaviour
 
         Vector3 nuevaPos = posicionInicial + new Vector3(desplazamientoX, 0, desplazamientoZ);
         rb.MovePosition(nuevaPos);
+    }
 
+    public void IniciarSismo(float duracion)
+    {
+        duracionSismo = duracion;
+        tiempoTranscurrido = 0f;
+        sismoActivo = true;
+        tiempo = 0f;
+        amplitudActual = 0f;
+        frecuenciaActual = 0f;
+    }
+
+    public void DetenerSismo()
+    {
+        sismoActivo = false;
+        amplitudObjetivo = 0f;
+        frecuenciaObjetivo = 0f;
+        tiempoTranscurrido = 0f;
+        rb.MovePosition(posicionInicial);
     }
 
     public void SetAmplitud(float valor)
@@ -66,7 +93,7 @@ public class simuladorSismo : MonoBehaviour
                 frecuenciaObjetivo = 2f;
                 break;
             case 2: // medio
-                amplitudObjetivo = 0.5f;
+                amplitudObjetivo = 0.6f;
                 frecuenciaObjetivo = 4f;
                 break;
             case 3: // fuerte
@@ -74,5 +101,10 @@ public class simuladorSismo : MonoBehaviour
                 frecuenciaObjetivo = 6f;
                 break;
         }
+    }
+
+    public static void ReportarDaño(float valorDaño)
+    {
+        OnDañoEstructural?.Invoke(valorDaño);
     }
 }

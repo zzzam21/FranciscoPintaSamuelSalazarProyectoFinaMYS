@@ -1,5 +1,135 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &105414164463508827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4414146244787217026}
+  - component: {fileID: 7954951240495590419}
+  - component: {fileID: 2571803531874957801}
+  - component: {fileID: 7995855240509569091}
+  - component: {fileID: 1341398369368335934}
+  - component: {fileID: 7281462295335110946}
+  m_Layer: 0
+  m_Name: Cimientos
+  m_TagString: Cimientos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4414146244787217026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105414164463508827}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.0458, y: -0.74, z: 1.4692}
+  m_LocalScale: {x: 8.626126, y: 1, z: 11.94863}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2078866545090720414}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7954951240495590419
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105414164463508827}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2571803531874957801
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105414164463508827}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7995855240509569091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105414164463508827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1341398369368335934
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105414164463508827}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0.5
+  m_AngularDrag: 0.5
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!138 &7281462295335110946
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105414164463508827}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &2078866545075226184
 GameObject:
   m_ObjectHideFlags: 0
@@ -24,7 +154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078866545075226184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -57,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2078866545090720414}
   m_Layer: 0
-  m_Name: Casa
+  m_Name: casaMadera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,6 +207,7 @@ Transform:
   m_Children:
   - {fileID: 2078866545377567915}
   - {fileID: 2078866545075226185}
+  - {fileID: 4414146244787217026}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104,7 +235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078866545377567914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -139,6 +270,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417104460532}
@@ -156,7 +295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -191,11 +330,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417088446770}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604641069967174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544027087299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2209340708984925917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604641069967174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529373165619014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -208,6 +381,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -230,7 +411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -265,11 +446,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053418521873080}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604640858557914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544102988639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7036342970356379956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604640858557914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372972051930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -283,9 +498,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -296,7 +519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4000005
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -329,6 +552,10 @@ PrefabInstance:
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
@@ -346,6 +573,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866544119900093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758797045622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866544119900093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8821404028346218059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758797045622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866544139722148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -354,9 +603,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -367,7 +624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -400,6 +657,10 @@ PrefabInstance:
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
@@ -417,6 +678,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866544139722148}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758751925615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866544139722148}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7193576728643592565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758751925615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866544230789096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -424,6 +707,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -438,7 +729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.4
+      value: 4.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -472,6 +763,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (7)
@@ -488,6 +783,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866544230789096}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025759176365859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866544230789096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &827633631554322418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025759176365859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866544372873515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -496,9 +813,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -509,7 +834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -543,6 +868,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (12)
@@ -559,6 +888,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866544372873515}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025759052104160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866544372873515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1708045797813518248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025759052104160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866544420023552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -566,6 +917,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -588,7 +947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -623,11 +982,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053418535415969}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604640609368965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544420023552}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5915307719975697198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604640609368965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529373288094597 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -641,9 +1034,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -654,7 +1055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -688,6 +1089,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (11)
@@ -704,6 +1109,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866544441317143}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025759118536668 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866544441317143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5256381255704224169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025759118536668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866544635756264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -712,9 +1139,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -725,7 +1160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4000005
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -759,6 +1194,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (16)
@@ -775,6 +1214,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866544635756264}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025759312987683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866544635756264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1013459124481434431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025759312987683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866544648991602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -782,6 +1243,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -800,7 +1269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -835,11 +1304,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053418704894482}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604641387783671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544648991602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2473521296669576343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604641387783671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529373517055479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -852,6 +1355,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -874,7 +1385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.7000003
+      value: 5.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -908,12 +1419,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2967628593394961174, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417490089833}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604641505783661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544731339240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2794331968830075794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604641505783661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529373602484077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -926,6 +1475,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -944,7 +1501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -979,11 +1536,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417955595245}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604641490265773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544747147304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5703984854064787078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604641490265773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529373615277741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -996,6 +1587,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -1014,7 +1613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1049,11 +1648,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053418239282860}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604641325606002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544844632823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6224691550992267819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604641325606002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529373974971506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -1067,9 +1700,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1080,7 +1721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4000005
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1114,6 +1755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (3)
@@ -1130,6 +1775,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866544906855337}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025759584000866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866544906855337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7961514124251915417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025759584000866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866544942784013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1137,6 +1804,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -1159,7 +1834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1194,11 +1869,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417104460532}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604641159514248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544942784013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4384441906402257576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604641159514248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529373805750408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -1237,7 +1946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1283,8 +1992,34 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417088446770}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604641154913327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544948789930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3418656309278916019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604641154913327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529373816812591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -1297,6 +2032,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -1315,7 +2058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1350,11 +2093,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417654539330}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604641175081549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866544994125000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5021606584508181418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604641175081549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529373854806605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -1367,6 +2144,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -1381,7 +2166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.4
+      value: 4.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1415,6 +2200,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (6)
@@ -1431,6 +2220,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866545120546951}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025757918685260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866545120546951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1287742379684352464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025757918685260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866545146267704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1438,6 +2249,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -1460,7 +2279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1495,11 +2314,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417955595245}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604640016506557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866545146267704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4568149606704130952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604640016506557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372130066109 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -1512,6 +2365,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -1530,7 +2391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.7000003
+      value: 5.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1565,11 +2426,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053416975329097}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604639852253369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866545244030524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2802416252929573108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604639852253369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529371965747385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -1582,6 +2477,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -1604,7 +2507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1639,11 +2542,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417625329057}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604639636717923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866545326299110}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3111842187678150684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604639636717923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372315459939 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -1656,6 +2593,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -1670,7 +2615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.4
+      value: 4.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1704,6 +2649,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (5)
@@ -1720,6 +2669,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866545369819756}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758168011431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866545369819756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6998214978242874169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758168011431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866545414028445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1728,9 +2699,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1741,7 +2720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1775,6 +2754,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (8)
@@ -1791,6 +2774,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866545414028445}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758145037398 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866545414028445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4762611245304921075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758145037398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866545454222031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1798,6 +2803,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_Name
       value: Viga (2)
@@ -1816,7 +2829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1851,11 +2864,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417654539330}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604639508798538 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866545454222031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5993700396387862505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604639508798538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372174957642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -1869,9 +2916,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1882,7 +2937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4000005
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1915,6 +2970,10 @@ PrefabInstance:
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
@@ -1932,6 +2991,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866545502957732}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758034741359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866545502957732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6653102771825372148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758034741359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866545540561223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1940,9 +3021,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1953,7 +3042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1986,6 +3075,10 @@ PrefabInstance:
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
@@ -2003,6 +3096,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866545540561223}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758005264780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866545540561223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2626806105445811223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758005264780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866545562342094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2011,9 +3126,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2024,7 +3147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2058,6 +3181,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (15)
@@ -2074,6 +3201,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866545562342094}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758027000325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866545562342094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6083794053843103814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758027000325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866545600440183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2081,6 +3230,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -2103,7 +3260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2138,11 +3295,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417088446770}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604640435024370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866545600440183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2263923080199472451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604640435024370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372582121970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -2155,6 +3346,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -2177,7 +3376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.7000003
+      value: 5.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2212,11 +3411,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053416975329097}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604640536837279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866545700022810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2716921725606499705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604640536837279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372683869343 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -2229,6 +3462,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -2251,7 +3492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2286,11 +3527,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417104460532}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604640396720395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866545773817742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8663680627438984063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604640396720395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372488177931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -2303,6 +3578,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -2321,7 +3604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.7000003
+      value: 5.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2356,9 +3639,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053418628563693}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!1 &1395604640422907400 stripped
@@ -2426,6 +3721,23 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &1695012489401627825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604640422907400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372535418376 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -2438,6 +3750,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -2456,7 +3776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2491,11 +3811,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053418521873080}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604640173948468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866545861552305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1001104080934736619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604640173948468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372853722676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
@@ -2508,6 +3862,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -2522,7 +3884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.4
+      value: 4.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2555,6 +3917,10 @@ PrefabInstance:
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
@@ -2572,6 +3938,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866545935075916}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758735348359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866545935075916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4403530934817469440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758735348359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866546039807031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2580,9 +3968,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2593,7 +3989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4000002
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2627,6 +4023,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (1)
@@ -2643,6 +4043,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866546039807031}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758571635964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866546039807031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5828973152798729242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758571635964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866546057930737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2651,9 +4073,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 2078866545075226185}
     m_Modifications:
     - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_BreakTorque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6978448361588706964, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1341398369368335934}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2664,7 +4094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 95180456738593412, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2698,6 +4128,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna (10)
@@ -2714,6 +4148,28 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
   m_PrefabInstance: {fileID: 2078866546057930737}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9017025758587592506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 2078866546057930737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6843485723310710659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017025758587592506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Madera
+    valor: 500000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &2078866546100098114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2721,6 +4177,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2078866545377567915}
     m_Modifications:
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: -8907006809513447729, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -2739,7 +4203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2774,11 +4238,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_BreakTorque
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126797328493477083, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 6853053417654539330}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+--- !u!1 &1395604640137757383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 2078866546100098114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &796465190119010857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395604640137757383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Madera
+    valor: 250000
+    alturaMaximaCaida: 0.5
 --- !u!4 &4577529372820693703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}

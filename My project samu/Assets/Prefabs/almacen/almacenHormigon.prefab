@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5782151771144983165}
   m_Layer: 0
   m_Name: Cimientos
-  m_TagString: Untagged
+  m_TagString: Cimientos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7662641872304376712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.99, y: -0.41, z: 0.07}
+  m_LocalPosition: {x: 2.99, y: 0, z: 0.07}
   m_LocalScale: {x: 7.35563, y: 1, z: 16.114601}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -108,13 +108,13 @@ Rigidbody:
   m_GameObject: {fileID: 7662641872304376712}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.5
+  m_AngularDrag: 0.5
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!138 &5782151771144983165
 FixedJoint:
   m_ObjectHideFlags: 0
@@ -212,7 +212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8205972577735927871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.81, y: 0.404, z: 3.37}
+  m_LocalPosition: {x: 6.81, y: 1.02, z: 3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -231,7 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8205972577778465540}
   m_Layer: 0
-  m_Name: Almacen
+  m_Name: almacenHormigon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,7 +377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8205972578693340985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.8100004, y: 3.4039998, z: 3.37}
+  m_LocalPosition: {x: 6.8100004, y: 4, z: 3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -527,6 +527,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058744231479}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569326598983 stripped
@@ -534,6 +542,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577411153346}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883845196615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577411153346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1647836100317507691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883845196615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577453754440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -589,12 +619,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_3.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075908620419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972577453754440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3226787643525382119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075908620419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059835655501 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -660,12 +720,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_10
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075983356734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972577459366901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3338864830582695785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075983356734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059713324784 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -743,6 +833,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059065958695}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569374009915 stripped
@@ -750,6 +848,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577464962238}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883926145595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577464962238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7151661695502635427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883926145595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577534214694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -817,6 +937,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058465705154}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569183347875 stripped
@@ -824,6 +952,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577534214694}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883722900643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577534214694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6380971548068661823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883722900643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577539865498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -879,12 +1029,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_7
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075793412945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972577539865498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4916956416661932950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075793412945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059917555359 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -950,12 +1130,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075775536346 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972577586971665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7510349268275493293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075775536346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059970971924 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -1021,12 +1231,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_14.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075849633163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972577596106048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5162508179651222751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075849633163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059843774533 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -1120,6 +1360,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059024626209}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569253790548 stripped
@@ -1127,6 +1375,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577614243281}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883777631060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577614243281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8629404321035344061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883777631060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577686938122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1194,6 +1464,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059843774533}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569604490383 stripped
@@ -1201,6 +1479,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577686938122}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883569439887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577686938122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1297339483037090179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883569439887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577697651697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1256,12 +1556,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_14
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076154540858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972577697651697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1396084121815905317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076154540858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460060077455092 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -1355,6 +1685,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059303293502}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569441024650 stripped
@@ -1362,6 +1700,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577800305679}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883456305802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577800305679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &57924027587673006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883456305802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577803078318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,6 +1801,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059835655501}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569451097131 stripped
@@ -1448,6 +1816,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577803078318}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883454893099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577803078318}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7170630127881260583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883454893099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577823990024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1523,6 +1913,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059470470409}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569463474061 stripped
@@ -1530,6 +1928,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577823990024}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883433731981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577823990024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6724502041188049393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883433731981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577849535408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1585,12 +2005,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_6
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076035949435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972577849535408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8209165464743509045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076035949435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460060227225269 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -1680,6 +2130,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058414059079}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569504883460 stripped
@@ -1687,6 +2145,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577866237313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883524342532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577866237313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7598864524807345129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883524342532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577870363144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1770,6 +2250,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460060227225269}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569518292109 stripped
@@ -1777,6 +2265,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577870363144}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883522038925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577870363144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2601753140622081361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883522038925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577875646481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1844,6 +2354,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059415465775}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569513041556 stripped
@@ -1851,6 +2369,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577875646481}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883516837524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577875646481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1390122872518436434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883516837524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577941046145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1918,6 +2458,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460060077455092}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569850029316 stripped
@@ -1925,6 +2473,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972577941046145}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884389647620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972577941046145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8622179469055755143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884389647620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577949939397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1980,12 +2550,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_4
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076473990670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972577949939397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6528389006712912684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076473990670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059255987136 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -2051,12 +2651,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_3
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076445536375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972577990711484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289221998016666571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076445536375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059298870713 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -2150,6 +2780,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058414059079}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569934313865 stripped
@@ -2157,6 +2795,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578028437260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884437182857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578028437260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6143264850495956979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884437182857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578041282092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2224,6 +2884,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059303293502}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569955547305 stripped
@@ -2231,6 +2899,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578041282092}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884491970729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578041282092}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2740051461788823358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884491970729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578078187425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2314,6 +3004,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059835655501}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569716824356 stripped
@@ -2321,6 +3019,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578078187425}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884252182820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578078187425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &280057907434266520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884252182820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578105908854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2376,12 +3096,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_8
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076292331197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578105908854}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6399057787143117663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076292331197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059418260339 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -2447,12 +3197,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_15.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076297865953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578109415978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3708344401481961833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076297865953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059415465775 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -2518,12 +3298,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_11.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076391307248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578137743163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9098153887599832292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076391307248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059303293502 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -2589,12 +3399,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_8.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076364914295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578176456380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8481950893376005995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076364914295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059348302777 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -2672,6 +3512,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058960554758}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570110344986 stripped
@@ -2679,6 +3527,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578204465567}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884126674714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578204465567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6133258797280349903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884126674714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578213168753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2746,6 +3616,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059153305183}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570119201012 stripped
@@ -2753,6 +3631,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578213168753}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884118737140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578213168753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3466639632464456249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884118737140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578244701711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2808,12 +3708,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_12.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076699584196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578244701711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &258369108882442333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076699584196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059548648202 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -2879,12 +3809,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_18.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076702906573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578248060934}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2322803530953208238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076702906573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059560402179 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -2978,6 +3938,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059713324784}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570165690425 stripped
@@ -2985,6 +3953,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578250303164}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884147482681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578250303164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1232148861761931841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884147482681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578256626984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3060,6 +4050,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059418260339}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570171949997 stripped
@@ -3067,6 +4065,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578256626984}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884141093805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578256626984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6960705263114967556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884141093805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578263143359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3134,6 +4154,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058484683260}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570169103674 stripped
@@ -3141,6 +4169,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578263143359}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884135150906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578263143359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3995529450827194775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884135150906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578266498238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3220,6 +4270,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058695480842}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570182820411 stripped
@@ -3227,6 +4285,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578266498238}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884199199291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578266498238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2120251433195215745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884199199291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578269076253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3282,12 +4362,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076791075798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578269076253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3973942931396510687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076791075798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059438822936 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -3381,6 +4491,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059065958695}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570177818052 stripped
@@ -3388,6 +4506,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578271996737}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884194213316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578271996737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5750715332790099955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884194213316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578285592493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3455,6 +4595,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058667817110}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570193582376 stripped
@@ -3462,6 +4610,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578285592493}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884180535592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578285592493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &982615024387778848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884180535592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578290931744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3529,6 +4699,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059418260339}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570208427685 stripped
@@ -3536,6 +4714,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578290931744}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884173426341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578290931744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3456819187624404009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884173426341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578304929804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3591,12 +4791,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_13.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076759808199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578304929804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &895418962674154152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076759808199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059470470409 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -3690,6 +4920,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059418260339}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570225473537 stripped
@@ -3697,6 +4935,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578307997316}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884224043009 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578307997316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4319029745821288241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884224043009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578313139279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3780,6 +5040,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058903752313}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570220065482 stripped
@@ -3787,6 +5055,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578313139279}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884218569418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578313139279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &477444794827541850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884218569418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578330636926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3874,6 +5164,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059970971924}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570236646651 stripped
@@ -3881,6 +5179,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578330636926}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884202644731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578330636926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5925908340555884428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884202644731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578384980568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3948,6 +5268,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058419875325}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570030755037 stripped
@@ -3955,6 +5283,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578384980568}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884013595869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578384980568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8713169638397976777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884013595869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578398978543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4010,12 +5360,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_13
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257076652521764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578398978543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4172631608753483837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257076652521764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059577117930 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -4109,6 +5489,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058668707777}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273570076607798 stripped
@@ -4116,6 +5504,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578435888051}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188884096083254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578435888051}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7918190471247307900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188884096083254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578487497272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4183,6 +5593,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059713324784}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568246875325 stripped
@@ -4190,6 +5608,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578487497272}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882769732797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578487497272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5416253539908876933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882769732797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578511928114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4245,12 +5685,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_12
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257074821350393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578511928114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5493743184478536400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257074821350393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058744231479 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -4344,6 +5814,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059348302777}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568286819653 stripped
@@ -4351,6 +5829,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578518856640}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882805417285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578518856640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6535280095187796593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882805417285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578524737965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4426,6 +5926,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059577117930}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568292701992 stripped
@@ -4433,6 +5941,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578524737965}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882798716712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578524737965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8030490475683003315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882798716712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578570601156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4488,12 +6018,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_6.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257074880117263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578570601156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8065465715506647802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257074880117263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058668707777 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -4559,12 +6119,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_16
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257074879155544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578571826579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &28801548683303342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257074879155544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058667817110 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -4658,6 +6248,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058695480842}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568360769425 stripped
@@ -4665,6 +6263,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578590888212}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882866833297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578590888212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3397108303219982015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882866833297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578593184527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4720,12 +6340,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257074902623172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578593184527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5458854496694648833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257074902623172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058695480842 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -4819,6 +6469,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058616337085}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568096119274 stripped
@@ -4826,6 +6484,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578603917167}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882653497834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578603917167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &55132708519828834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882653497834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578616204201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4909,6 +6589,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058465705154}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568117648684 stripped
@@ -4916,6 +6604,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578616204201}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882640489772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578616204201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7761312359064643189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882640489772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578623098808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4999,6 +6709,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058410794240}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568115177789 stripped
@@ -5006,6 +6724,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578623098808}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882634807613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578623098808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &558529853052532228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882634807613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578690848001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5081,6 +6821,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058410794240}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568181937028 stripped
@@ -5088,6 +6836,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578690848001}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882700583812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578690848001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1182794223302028128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882700583812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578710870613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5167,6 +6937,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059255987136}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568211463376 stripped
@@ -5174,6 +6952,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578710870613}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882747870416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578710870613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3468428457580265944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882747870416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578715013744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5257,6 +7057,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059970971924}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568208069877 stripped
@@ -5264,6 +7072,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578715013744}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882743493877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578715013744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2958174223330568370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882743493877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578783936292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5319,12 +7149,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_5.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075093424111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578783936292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8861434514054199042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075093424111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059024626209 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -5390,12 +7250,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_15
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075094677464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578787270419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6135109187116272461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075094677464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059021685270 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -5461,12 +7351,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_4.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075182205879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578805646204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7139001345884682547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075182205879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058903752313 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -5544,6 +7464,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059024626209}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568578971386 stripped
@@ -5551,6 +7479,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578808893567}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882581653242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578808893567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6261139669976532758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882581653242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578840408293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5618,6 +7568,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058616337085}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568602015328 stripped
@@ -5625,6 +7583,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578840408293}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882617362016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578840408293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5559967883289025978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882617362016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578864547331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5680,12 +7660,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_11
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075171933896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578864547331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1941790920337473320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075171933896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058960554758 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -5779,6 +7789,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059548648202}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568363721780 stripped
@@ -5786,6 +7804,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578873672369}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882384294964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578873672369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6202877339460046867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882384294964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578906957877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5841,12 +7881,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_17
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257074945888510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578906957877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7576916101950727174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257074945888510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059137164592 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -5940,6 +8010,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059255987136}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568407313139 stripped
@@ -5947,6 +8025,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578914266230}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882410076915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578914266230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4404471994082776043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882410076915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578925192026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6002,12 +8102,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_16.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257074966190993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578925192026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &265358896090072076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257074966190993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059153305183 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -6101,6 +8231,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058419875325}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568437130881 stripped
@@ -6108,6 +8246,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578938707972}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882453526145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578938707972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6297222659833290802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882453526145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578961583138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6163,12 +8323,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_5
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075067557097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972578961583138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4900076430968058757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075067557097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460059065958695 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -6262,6 +8452,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059298870713}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568457479865 stripped
@@ -6269,6 +8467,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578964234300}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882426623673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578964234300}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4148948697420641703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882426623673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578979475689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6356,6 +8576,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059438822936}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568479987308 stripped
@@ -6363,6 +8591,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578979475689}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882479605356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578979475689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &379798406288936520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882479605356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578984771698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6430,6 +8680,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059021685270}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568474691319 stripped
@@ -6437,6 +8695,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972578984771698}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882474292983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972578984771698}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &393328304186733244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882474292983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579197712670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6492,12 +8772,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_18
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075238666709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972579197712670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6915140758461076248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075238666709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058360468507 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -6575,6 +8885,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059348302777}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568728789415 stripped
@@ -6582,6 +8900,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972579230287650}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883235836327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972579230287650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2600088416398543680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883235836327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579251623097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6649,6 +8989,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059137164592}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568744677948 stripped
@@ -6656,6 +9004,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972579251623097}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883280101948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972579251623097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4166793530856183031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883280101948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579296792804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6739,6 +9109,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059438822936}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569064707681 stripped
@@ -6746,6 +9124,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972579296792804}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883033900641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972579296792804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6428189241182791521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883033900641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579309236679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6801,12 +9201,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_9
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075616565516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972579309236679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8903144886742142214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075616565516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058465705154 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -6896,6 +9326,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059298870713}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569079908782 stripped
@@ -6903,6 +9341,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972579319344939}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883079526830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972579319344939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5328479266354837009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883079526830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579324009721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6958,12 +9418,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_17.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075631416370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972579324009721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1584242258877656959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075631416370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058484683260 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -7057,6 +9547,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460059577117930}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273569122032185 stripped
@@ -7064,6 +9562,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972579360550076}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188883103824441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972579360550076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7409675198671149179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188883103824441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579382235141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7119,12 +9639,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_7.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075691677902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972579382235141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4832823747974312656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075691677902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058410794240 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -7190,12 +9740,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_10.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075696605235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972579389235448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2887846672480459753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075696605235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058419875325 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -7261,12 +9841,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_2.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075703339913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972579396002626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7781710771166374645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075703339913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058414059079 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
@@ -7360,6 +9970,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058960554758}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568921290128 stripped
@@ -7367,6 +9985,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972579422876437}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882908325264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972579422876437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5262691143532610796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882908325264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579443272240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7446,6 +10086,14 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 3612460058903752313}
+    - target: {fileID: 8192138702283620243, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
+    - target: {fileID: 8489246650410123604, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
 --- !u!4 &5962273568935271605 stripped
@@ -7453,6 +10101,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2548818233156810373, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
   m_PrefabInstance: {fileID: 8205972579443272240}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9108188882955861173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1119057772045997701, guid: 0b42b5231ec1d544baea08c39600b81b, type: 3}
+  m_PrefabInstance: {fileID: 8205972579443272240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6418446424061365524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108188882955861173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 0
+  material:
+    nombre: Hormigon
+    valor: 800000
+    alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579461971896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7508,12 +10178,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Mass
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
       propertyPath: m_Name
       value: Columna_9.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7379020550576834794, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4450e5e542675d8448c4d6b8be93e678, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+--- !u!1 &1160257075503023987 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060367943805237451, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
+  m_PrefabInstance: {fileID: 8205972579461971896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4591683535164098765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160257075503023987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f322662b901e6084ca7de1d1f2110cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoElemento: 1
+  material:
+    nombre: Hormigon
+    valor: 1000000
+    alturaMaximaCaida: 0.5
 --- !u!54 &3612460058616337085 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4882871618834017541, guid: a77cd9a763681c541b9c4e549664a652, type: 3}
