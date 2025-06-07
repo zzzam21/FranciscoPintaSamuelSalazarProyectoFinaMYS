@@ -30,7 +30,7 @@ public class ElementoEstructural : MonoBehaviour
         {
             haSufridoDaño = true;
             float valorDaño = CalcularValorDaño();
-            simuladorSismo.ReportarDaño(valorDaño);
+            simuladorSismo.ReportarDanio(valorDaño); // Línea corregida
         }
     }
     
@@ -54,6 +54,8 @@ public class ElementoEstructural : MonoBehaviour
     private float CalcularValorDaño()
     {
         float valorBase = tipoElemento == TipoElemento.Viga ? 1.5f : 2f;
-        return valorBase * material.valor;
+        return material.valor;
+
+
     }
 }

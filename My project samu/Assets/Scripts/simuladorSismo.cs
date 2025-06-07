@@ -12,13 +12,26 @@ public class simuladorSismo : MonoBehaviour
     private float amplitudObjetivo;
     private float frecuenciaObjetivo;
 
+    [Header("Configuración General")]
     public float velocidadTransicion = 2f;
     private bool sismoActivo = false;
     private float duracionSismo = 10f;
     private float tiempoTranscurrido = 0f;
+
+    [Header("Configuración de Detención")]
+    public float tiempoTransicionDetencion = 3.0f;
+    private bool deteniendo = false;
+    private float amplitudInicialDetencion;
+    private float frecuenciaInicialDetencion;
+    private float tiempoDetencionIniciado;
+
+    public delegate void DanioEstructuralHandler(float valorDanio);
+    public static event DanioEstructuralHandler OnDanioEstructural;
     
-    public delegate void DañoEstructuralHandler(float valorDaño);
-    public static event DañoEstructuralHandler OnDañoEstructural;
+    public static void ReportarDanio(float valorDanio)
+    {
+        OnDanioEstructural?.Invoke(valorDanio);
+    }
 
     void Start()
     {
@@ -34,8 +47,47 @@ public class simuladorSismo : MonoBehaviour
 
     void Update()
     {
-        if (!sismoActivo) return;
+        if (deteniendo)
+        {
+            ProcesarDetencionGradual();
+        }
+        else if (sismoActivo)
+        {
+            ProcesarSismoActivo();
+        }
+    }
 
+    private void ProcesarDetencionGradual()
+    {
+        float progreso = (Time.time - tiempoDetencionIniciado) / tiempoTransicionDetencion;
+        
+        if (progreso >= 1f)
+        {
+            FinalizarDetencion();
+        }
+        else
+        {
+            // Interpolación cuadrática para suavizado
+            float factor = 1 - Mathf.Pow(progreso, 2);
+            amplitudObjetivo = amplitudInicialDetencion * factor;
+            frecuenciaObjetivo = frecuenciaInicialDetencion * factor;
+            
+            ActualizarMovimientoSismo();
+        }
+    }
+
+    private void FinalizarDetencion()
+    {
+        sismoActivo = false;
+        deteniendo = false;
+        amplitudObjetivo = 0f;
+        frecuenciaObjetivo = 0f;
+        rb.MovePosition(posicionInicial);
+        tiempoTranscurrido = 0f;
+    }
+
+    private void ProcesarSismoActivo()
+    {
         tiempo += Time.deltaTime;
         tiempoTranscurrido += Time.deltaTime;
 
@@ -48,6 +100,11 @@ public class simuladorSismo : MonoBehaviour
         amplitudActual = Mathf.Lerp(amplitudActual, amplitudObjetivo, Time.deltaTime * velocidadTransicion);
         frecuenciaActual = Mathf.Lerp(frecuenciaActual, frecuenciaObjetivo, Time.deltaTime * velocidadTransicion);
 
+        ActualizarMovimientoSismo();
+    }
+
+    private void ActualizarMovimientoSismo()
+    {
         float desplazamientoX = Mathf.Sin(tiempo * frecuenciaActual) * amplitudActual;
         float desplazamientoZ = Mathf.Cos(tiempo * frecuenciaActual * 0.8f) * amplitudActual * 0.5f;
 
@@ -60,6 +117,7 @@ public class simuladorSismo : MonoBehaviour
         duracionSismo = duracion;
         tiempoTranscurrido = 0f;
         sismoActivo = true;
+        deteniendo = false;
         tiempo = 0f;
         amplitudActual = 0f;
         frecuenciaActual = 0f;
@@ -67,11 +125,12 @@ public class simuladorSismo : MonoBehaviour
 
     public void DetenerSismo()
     {
-        sismoActivo = false;
-        amplitudObjetivo = 0f;
-        frecuenciaObjetivo = 0f;
-        tiempoTranscurrido = 0f;
-        rb.MovePosition(posicionInicial);
+        if (!sismoActivo || deteniendo) return;
+        
+        deteniendo = true;
+        tiempoDetencionIniciado = Time.time;
+        amplitudInicialDetencion = amplitudActual;
+        frecuenciaInicialDetencion = frecuenciaActual;
     }
 
     public void SetAmplitud(float valor)
@@ -101,10 +160,5 @@ public class simuladorSismo : MonoBehaviour
                 frecuenciaObjetivo = 6f;
                 break;
         }
-    }
-
-    public static void ReportarDaño(float valorDaño)
-    {
-        OnDañoEstructural?.Invoke(valorDaño);
     }
 }

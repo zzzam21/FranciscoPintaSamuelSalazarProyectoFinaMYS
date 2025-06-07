@@ -162,7 +162,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371746843079167
 GameObject:
@@ -326,7 +326,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371746853821382
 GameObject:
@@ -490,7 +490,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371746893864998
 GameObject:
@@ -654,7 +654,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371746906629279
 GameObject:
@@ -818,7 +818,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371746940152781
 GameObject:
@@ -982,7 +982,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371746967973355
 GameObject:
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371746973365156
 GameObject:
@@ -1310,7 +1310,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371746993600203
 GameObject:
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747016706459
 GameObject:
@@ -1638,7 +1638,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747019686784
 GameObject:
@@ -1802,7 +1802,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747040799451
 GameObject:
@@ -1966,7 +1966,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747069718131
 GameObject:
@@ -2130,7 +2130,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747122062446
 GameObject:
@@ -2294,7 +2294,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747125419839
 GameObject:
@@ -2458,7 +2458,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747159816373
 GameObject:
@@ -2622,7 +2622,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747179472951
 GameObject:
@@ -2786,7 +2786,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747211304328
 GameObject:
@@ -2950,7 +2950,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747214140423
 GameObject:
@@ -3114,7 +3114,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747272932210
 GameObject:
@@ -3278,7 +3278,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747293126102
 GameObject:
@@ -3442,7 +3442,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747325624378
 GameObject:
@@ -3606,7 +3606,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747448444623
 GameObject:
@@ -3770,7 +3770,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747470069014
 GameObject:
@@ -3934,7 +3934,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747479435414
 GameObject:
@@ -4098,7 +4098,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747501296658
 GameObject:
@@ -4262,7 +4262,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747527024592
 GameObject:
@@ -4426,7 +4426,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747544772710
 GameObject:
@@ -4590,7 +4590,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747550393668
 GameObject:
@@ -4754,7 +4754,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747573118656
 GameObject:
@@ -4918,7 +4918,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747587238976
 GameObject:
@@ -5082,7 +5082,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747627136282
 GameObject:
@@ -5246,7 +5246,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747637786769
 GameObject:
@@ -5410,7 +5410,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747640855433
 GameObject:
@@ -5574,7 +5574,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747659936204
 GameObject:
@@ -5738,7 +5738,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747756640278
 GameObject:
@@ -5902,7 +5902,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747777569101
 GameObject:
@@ -6066,7 +6066,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747788941399
 GameObject:
@@ -6230,7 +6230,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747815282360
 GameObject:
@@ -6394,7 +6394,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747815488668
 GameObject:
@@ -6558,7 +6558,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747830223710
 GameObject:
@@ -6722,7 +6722,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747877698130
 GameObject:
@@ -6886,7 +6886,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371747929377204
 GameObject:
@@ -7050,7 +7050,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748014371653
 GameObject:
@@ -7214,7 +7214,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748044832914
 GameObject:
@@ -7378,7 +7378,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748048449560
 GameObject:
@@ -7542,7 +7542,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748059306726
 GameObject:
@@ -7706,7 +7706,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748077996470
 GameObject:
@@ -7870,7 +7870,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748093835509
 GameObject:
@@ -8034,7 +8034,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748100259720
 GameObject:
@@ -8198,7 +8198,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748100763061
 GameObject:
@@ -8362,7 +8362,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748162958119
 GameObject:
@@ -8526,7 +8526,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748270586220
 GameObject:
@@ -8690,7 +8690,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748275595702
 GameObject:
@@ -8854,7 +8854,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748284521273
 GameObject:
@@ -9018,7 +9018,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748297937232
 GameObject:
@@ -9182,7 +9182,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748318966559
 GameObject:
@@ -9346,7 +9346,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748331854568
 GameObject:
@@ -9510,7 +9510,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748343172314
 GameObject:
@@ -9674,7 +9674,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748477989697
 GameObject:
@@ -9838,7 +9838,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748588709191
 GameObject:
@@ -10002,7 +10002,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748648496295
 GameObject:
@@ -10166,7 +10166,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748649817449
 GameObject:
@@ -10330,7 +10330,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748660554617
 GameObject:
@@ -10494,7 +10494,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748682462402
 GameObject:
@@ -10658,7 +10658,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748770438906
 GameObject:
@@ -10822,7 +10822,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748846455837
 GameObject:
@@ -10986,7 +10986,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1660371748894062864
 GameObject:
@@ -11150,7 +11150,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Madera
-    valor: 250000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &1769178339674071608
 GameObject:
@@ -12024,7 +12024,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492377461785
 GameObject:
@@ -12172,7 +12172,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492387982810
 GameObject:
@@ -12320,7 +12320,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492509531538
 GameObject:
@@ -12468,7 +12468,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492553100000
 GameObject:
@@ -12616,7 +12616,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492605862803
 GameObject:
@@ -12764,7 +12764,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492703347696
 GameObject:
@@ -12912,7 +12912,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492706347053
 GameObject:
@@ -13060,7 +13060,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492818382812
 GameObject:
@@ -13208,7 +13208,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492854055424
 GameObject:
@@ -13356,7 +13356,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492854287295
 GameObject:
@@ -13504,7 +13504,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492952224315
 GameObject:
@@ -13652,7 +13652,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492953387627
 GameObject:
@@ -13800,7 +13800,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206492965351126
 GameObject:
@@ -13948,7 +13948,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493110020388
 GameObject:
@@ -14096,7 +14096,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493120853836
 GameObject:
@@ -14244,7 +14244,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493123199826
 GameObject:
@@ -14392,7 +14392,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493224651884
 GameObject:
@@ -14540,7 +14540,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493340875742
 GameObject:
@@ -14688,7 +14688,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493365187471
 GameObject:
@@ -14836,7 +14836,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493392788926
 GameObject:
@@ -14984,7 +14984,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493401095405
 GameObject:
@@ -15132,7 +15132,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493464092662
 GameObject:
@@ -15280,7 +15280,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493503141850
 GameObject:
@@ -15428,7 +15428,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493652701833
 GameObject:
@@ -15576,7 +15576,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493730044661
 GameObject:
@@ -15724,7 +15724,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493777400930
 GameObject:
@@ -15872,7 +15872,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493830942986
 GameObject:
@@ -16020,7 +16020,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493843147301
 GameObject:
@@ -16168,7 +16168,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493844093093
 GameObject:
@@ -16316,7 +16316,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493857739266
 GameObject:
@@ -16464,7 +16464,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493866219789
 GameObject:
@@ -16612,7 +16612,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493867396569
 GameObject:
@@ -16760,7 +16760,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493885600618
 GameObject:
@@ -16908,7 +16908,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206493890771830
 GameObject:
@@ -17056,7 +17056,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494010228291
 GameObject:
@@ -17204,7 +17204,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494068579088
 GameObject:
@@ -17352,7 +17352,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494081382252
 GameObject:
@@ -17500,7 +17500,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494126380813
 GameObject:
@@ -17648,7 +17648,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494132223839
 GameObject:
@@ -17796,7 +17796,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494142417172
 GameObject:
@@ -17944,7 +17944,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494177482599
 GameObject:
@@ -18092,7 +18092,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494205350349
 GameObject:
@@ -18240,7 +18240,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494233662945
 GameObject:
@@ -18388,7 +18388,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494246692075
 GameObject:
@@ -18536,7 +18536,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494292440207
 GameObject:
@@ -18684,7 +18684,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494314094267
 GameObject:
@@ -18832,7 +18832,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5
 --- !u!1 &8752206494362995639
 GameObject:
@@ -18980,5 +18980,5 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Madera
-    valor: 500000
+    valor: 50000
     alturaMaximaCaida: 0.5

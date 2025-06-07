@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7662641872304376712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.99, y: 0, z: 0.07}
+  m_LocalPosition: {x: 2.99, y: -0.73, z: 0.07}
   m_LocalScale: {x: 7.35563, y: 1, z: 16.114601}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -212,7 +212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8205972577735927871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.81, y: 1.05, z: 3.37}
+  m_LocalPosition: {x: 6.81, y: 0.12, z: 3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -377,7 +377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8205972578693340985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.8100004, y: 4.05, z: 3.37}
+  m_LocalPosition: {x: 6.8100004, y: 3.1200004, z: 3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -562,7 +562,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577453754440
 PrefabInstance:
@@ -657,7 +657,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059835655501 stripped
 Rigidbody:
@@ -762,7 +762,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059713324784 stripped
 Rigidbody:
@@ -880,7 +880,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577534214694
 PrefabInstance:
@@ -988,7 +988,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577539865498
 PrefabInstance:
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059917555359 stripped
 Rigidbody:
@@ -1188,7 +1188,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059970971924 stripped
 Rigidbody:
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059843774533 stripped
 Rigidbody:
@@ -1423,7 +1423,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577686938122
 PrefabInstance:
@@ -1531,7 +1531,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577697651697
 PrefabInstance:
@@ -1626,7 +1626,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460060077455092 stripped
 Rigidbody:
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577803078318
 PrefabInstance:
@@ -1876,7 +1876,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577823990024
 PrefabInstance:
@@ -1988,7 +1988,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577849535408
 PrefabInstance:
@@ -2083,7 +2083,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460060227225269 stripped
 Rigidbody:
@@ -2213,7 +2213,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577870363144
 PrefabInstance:
@@ -2333,7 +2333,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577875646481
 PrefabInstance:
@@ -2441,7 +2441,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577941046145
 PrefabInstance:
@@ -2549,7 +2549,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972577949939397
 PrefabInstance:
@@ -2644,7 +2644,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059255987136 stripped
 Rigidbody:
@@ -2749,7 +2749,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059298870713 stripped
 Rigidbody:
@@ -2879,7 +2879,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578041282092
 PrefabInstance:
@@ -2987,7 +2987,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578078187425
 PrefabInstance:
@@ -3107,7 +3107,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578105908854
 PrefabInstance:
@@ -3202,7 +3202,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059418260339 stripped
 Rigidbody:
@@ -3307,7 +3307,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059415465775 stripped
 Rigidbody:
@@ -3412,7 +3412,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059303293502 stripped
 Rigidbody:
@@ -3517,7 +3517,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059348302777 stripped
 Rigidbody:
@@ -3635,7 +3635,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578213168753
 PrefabInstance:
@@ -3743,7 +3743,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578244701711
 PrefabInstance:
@@ -3838,7 +3838,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059548648202 stripped
 Rigidbody:
@@ -3943,7 +3943,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059560402179 stripped
 Rigidbody:
@@ -4073,7 +4073,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578256626984
 PrefabInstance:
@@ -4185,7 +4185,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578263143359
 PrefabInstance:
@@ -4293,7 +4293,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578266498238
 PrefabInstance:
@@ -4413,7 +4413,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578269076253
 PrefabInstance:
@@ -4508,7 +4508,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059438822936 stripped
 Rigidbody:
@@ -4638,7 +4638,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578285592493
 PrefabInstance:
@@ -4746,7 +4746,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578290931744
 PrefabInstance:
@@ -4854,7 +4854,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578304929804
 PrefabInstance:
@@ -4949,7 +4949,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059470470409 stripped
 Rigidbody:
@@ -5079,7 +5079,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578313139279
 PrefabInstance:
@@ -5199,7 +5199,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578330636926
 PrefabInstance:
@@ -5323,7 +5323,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578384980568
 PrefabInstance:
@@ -5431,7 +5431,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578398978543
 PrefabInstance:
@@ -5526,7 +5526,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059577117930 stripped
 Rigidbody:
@@ -5656,7 +5656,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578487497272
 PrefabInstance:
@@ -5764,7 +5764,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578511928114
 PrefabInstance:
@@ -5859,7 +5859,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058744231479 stripped
 Rigidbody:
@@ -5989,7 +5989,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578524737965
 PrefabInstance:
@@ -6101,7 +6101,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578570601156
 PrefabInstance:
@@ -6196,7 +6196,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058668707777 stripped
 Rigidbody:
@@ -6301,7 +6301,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058667817110 stripped
 Rigidbody:
@@ -6431,7 +6431,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578593184527
 PrefabInstance:
@@ -6526,7 +6526,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058695480842 stripped
 Rigidbody:
@@ -6656,7 +6656,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578616204201
 PrefabInstance:
@@ -6776,7 +6776,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578623098808
 PrefabInstance:
@@ -6896,7 +6896,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578690848001
 PrefabInstance:
@@ -7008,7 +7008,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578710870613
 PrefabInstance:
@@ -7128,7 +7128,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578715013744
 PrefabInstance:
@@ -7248,7 +7248,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578783936292
 PrefabInstance:
@@ -7343,7 +7343,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059024626209 stripped
 Rigidbody:
@@ -7448,7 +7448,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059021685270 stripped
 Rigidbody:
@@ -7553,7 +7553,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058903752313 stripped
 Rigidbody:
@@ -7671,7 +7671,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578840408293
 PrefabInstance:
@@ -7779,7 +7779,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578864547331
 PrefabInstance:
@@ -7874,7 +7874,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058960554758 stripped
 Rigidbody:
@@ -8004,7 +8004,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578906957877
 PrefabInstance:
@@ -8099,7 +8099,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059137164592 stripped
 Rigidbody:
@@ -8229,7 +8229,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578925192026
 PrefabInstance:
@@ -8324,7 +8324,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059153305183 stripped
 Rigidbody:
@@ -8454,7 +8454,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578961583138
 PrefabInstance:
@@ -8549,7 +8549,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460059065958695 stripped
 Rigidbody:
@@ -8679,7 +8679,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578979475689
 PrefabInstance:
@@ -8803,7 +8803,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972578984771698
 PrefabInstance:
@@ -8911,7 +8911,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579197712670
 PrefabInstance:
@@ -9006,7 +9006,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058360468507 stripped
 Rigidbody:
@@ -9124,7 +9124,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579251623097
 PrefabInstance:
@@ -9232,7 +9232,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579296792804
 PrefabInstance:
@@ -9352,7 +9352,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579309236679
 PrefabInstance:
@@ -9447,7 +9447,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058465705154 stripped
 Rigidbody:
@@ -9577,7 +9577,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579324009721
 PrefabInstance:
@@ -9672,7 +9672,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058484683260 stripped
 Rigidbody:
@@ -9802,7 +9802,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579382235141
 PrefabInstance:
@@ -9897,7 +9897,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058410794240 stripped
 Rigidbody:
@@ -10002,7 +10002,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058419875325 stripped
 Rigidbody:
@@ -10107,7 +10107,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058414059079 stripped
 Rigidbody:
@@ -10237,7 +10237,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579443272240
 PrefabInstance:
@@ -10357,7 +10357,7 @@ MonoBehaviour:
   tipoElemento: 0
   material:
     nombre: Metal
-    valor: 1000000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!1001 &8205972579461971896
 PrefabInstance:
@@ -10452,7 +10452,7 @@ MonoBehaviour:
   tipoElemento: 1
   material:
     nombre: Metal
-    valor: 1500000
+    valor: 500000
     alturaMaximaCaida: 0.5
 --- !u!54 &3612460058616337085 stripped
 Rigidbody:

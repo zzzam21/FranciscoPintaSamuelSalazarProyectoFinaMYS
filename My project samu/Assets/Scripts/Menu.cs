@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class Menu : MonoBehaviour
 {
@@ -26,7 +27,9 @@ public class Menu : MonoBehaviour
 
     [Header("Contador de Daños")]
     public TMP_Text dañosTexto;
+    public TMP_Text porcentajePerdidaText;
     private float dañoTotal = 0f;
+    public TMP_Text ValorTotalText;
 
     [Header("Botones")]
     public Button iniciarBoton;
@@ -51,24 +54,29 @@ public class Menu : MonoBehaviour
     public simuladorSismo simulador;
     public GameObject suelo;
 
+
+
+    public ElementoEstructural.MaterialConstruccion material = new ElementoEstructural.MaterialConstruccion();
     private float tiempoRestante;
+    private float TotalValor;
+    private float perdidaPorc;
     private bool contadorActivo = false;
+   
 
     void Start()
     {
         ConfigurarFisicasEstables();
         ConfigurarBotones();
         contadorTexto.text = "";
-        dañosTexto.text = "Daño total: 0";
+        dañosTexto.text = "Perdida total: $ 0";
+
         
-        // Suscribirse a eventos de daño
-        simuladorSismo.OnDañoEstructural += RegistrarDaño;
+        simuladorSismo.OnDanioEstructural += RegistrarDanio;
     }
 
     void OnDestroy()
     {
-        // Desuscribirse para evitar memory leaks
-        simuladorSismo.OnDañoEstructural -= RegistrarDaño;
+        simuladorSismo.OnDanioEstructural -= RegistrarDanio;
     }
 
     void Update()
@@ -103,47 +111,71 @@ public class Menu : MonoBehaviour
 
     public void IniciarSimulacion()
     {
-        // Detener simulación anterior
         simulador.DetenerSismo();
         contadorActivo = false;
         
-        // Eliminar estructura existente
         if (estructuraActual != null)
         {
             Destroy(estructuraActual);
         }
 
-        // Resetear contadores
         dañoTotal = 0f;
-        dañosTexto.text = "Daño total: 0";
+        dañosTexto.text = "Perdida Total: $ 0";
         contadorTexto.text = "";
 
-        // Configurar magnitud del sismo
         ConfigurarMagnitudSismo();
 
-        // Configurar duración
         float duracion = ObtenerDuracionSeleccionada();
         tiempoRestante = duracion;
         contadorActivo = true;
 
-        // Seleccionar y crear el prefab adecuado
         GameObject prefabElegido = ObtenerPrefabSeleccionado();
         
         if (prefabElegido != null)
         {
-            // Instanciar con pequeño offset vertical
             estructuraActual = Instantiate(prefabElegido, new Vector3(0, 0.5f, 0), Quaternion.identity);
-            
-            // Configurar conexión con el suelo
             ConfigurarConexionSuelo();
-            
-            // Configurar materiales y valores de daño
             ConfigurarElementosEstructurales();
             
-            // Iniciar simulación con duración
             simulador.IniciarSismo(duracion);
-            
-            // Actualizar estado de botones
+            porcentajePerdidaText.text = $"Perdida: 0%";
+            if (maderaToggle.isOn & casaToggle.isOn)
+            {
+                TotalValor = 1800000;
+            }
+            else if (maderaToggle.isOn & almacenToggle.isOn)
+            {
+                TotalValor = 4500000;
+            }
+            else if (maderaToggle.isOn & edificioToggle.isOn)
+            {
+                TotalValor = 5800000;
+            }
+            else if (hormigonToggle.isOn & casaToggle.isOn)
+            {
+                TotalValor = 7200000;
+            }
+            else if (hormigonToggle.isOn & almacenToggle.isOn)
+            {
+                TotalValor = 18000000;
+            }
+            else if (hormigonToggle.isOn & edificioToggle.isOn)
+            {
+                TotalValor = 23200000;
+            }
+            else if (metalToggle.isOn & casaToggle.isOn)
+            {
+                TotalValor = 18500000;
+            }
+            else if (metalToggle.isOn & almacenToggle.isOn)
+            {
+                TotalValor = 45000000;
+            }
+            else if (metalToggle.isOn & edificioToggle.isOn)
+            {
+                TotalValor = 58000000;
+            }
+            ValorTotalText.text = $"Valor Estructura: $ {TotalValor:F1}";
             iniciarBoton.interactable = false;
             detenerBoton.interactable = true;
         }
@@ -153,65 +185,24 @@ public class Menu : MonoBehaviour
         }
     }
 
-    private void ConfigurarElementosEstructurales()
-    {
-        ElementoEstructural.MaterialConstruccion material = new ElementoEstructural.MaterialConstruccion();
-
-        // Determinar material seleccionado
-        if (maderaToggle.isOn)
-        {
-            material.nombre = "Madera";
-            material.valor = 1.0f;
-            material.alturaMaximaCaida = 0.5f;
-        }
-        else if (hormigonToggle.isOn)
-        {
-            material.nombre = "Hormigón";
-            material.valor = 1.5f;
-            material.alturaMaximaCaida = 0.4f;
-        }
-        else if (metalToggle.isOn)
-        {
-            material.nombre = "Metal";
-            material.valor = 2.0f;
-            material.alturaMaximaCaida = 0.6f;
-        }
-
-        // Aplicar a todos los elementos estructurales
-        foreach (Transform child in estructuraActual.transform)
-        {
-            ElementoEstructural elemento = child.GetComponent<ElementoEstructural>();
-            if (elemento != null)
-            {
-                elemento.material = material;
-                
-                // Determinar si es viga o columna por nombre
-                if (child.name.ToLower().Contains("viga"))
-                {
-                    elemento.tipoElemento = ElementoEstructural.TipoElemento.Viga;
-                }
-                else if (child.name.ToLower().Contains("columna"))
-                {
-                    elemento.tipoElemento = ElementoEstructural.TipoElemento.Columna;
-                }
-            }
-        }
-    }
-
     public void DetenerSimulacion()
     {
+        simulador.DetenerSismo();
+        StartCoroutine(EsperarYReactivarBotones(simulador.tiempoTransicionDetencion));
+    }
+
+    private IEnumerator EsperarYReactivarBotones(float tiempoEspera)
+    {
+        yield return new WaitForSeconds(tiempoEspera);
         FinalizarSimulacion("Simulación detenida");
     }
 
     private void FinalizarSimulacion(string mensaje)
     {
-        simulador.DetenerSismo();
         contadorActivo = false;
         contadorTexto.text = mensaje;
-        
         iniciarBoton.interactable = true;
         detenerBoton.interactable = false;
-        
         StartCoroutine(LimpiarTextoContador());
     }
 
@@ -221,13 +212,17 @@ public class Menu : MonoBehaviour
         contadorTexto.text = "";
     }
 
-    private void RegistrarDaño(float valorDaño)
+    private void RegistrarDanio(float valorDanio)
     {
-        dañoTotal += valorDaño;
-        dañosTexto.text = $"Daño total: {dañoTotal:F1}";
-        
-        // Efecto visual cuando hay daño
-        StartCoroutine(AnimarTextoDaño());
+        if (contadorActivo != false) 
+        {
+            
+            dañoTotal += valorDanio;
+            dañosTexto.text = $"Daño total: $ {dañoTotal:F1}";
+            StartCoroutine(AnimarTextoDaño());
+            perdidaPorc = (100 * dañoTotal) / TotalValor;
+            porcentajePerdidaText.text = $"Perdida: {perdidaPorc:F1} %";
+        }
     }
 
     private IEnumerator AnimarTextoDaño()
@@ -252,18 +247,9 @@ public class Menu : MonoBehaviour
 
     private void ConfigurarMagnitudSismo()
     {
-        if (leveToggle.isOn)
-        {
-            simulador.SetMagnitud(1);
-        }
-        else if (medioToggle.isOn)
-        {
-            simulador.SetMagnitud(2);
-        }
-        else if (fuerteToggle.isOn)
-        {
-            simulador.SetMagnitud(3);
-        }
+        if (leveToggle.isOn) simulador.SetMagnitud(1);
+        else if (medioToggle.isOn) simulador.SetMagnitud(2);
+        else if (fuerteToggle.isOn) simulador.SetMagnitud(3);
     }
 
     private GameObject ObtenerPrefabSeleccionado()
@@ -326,17 +312,43 @@ public class Menu : MonoBehaviour
         }
     }
 
-    private IEnumerator EstabilizarEstructura()
+    private void ConfigurarElementosEstructurales()
     {
-        yield return new WaitForFixedUpdate();
-        
-        if (estructuraActual != null)
+
+        if (maderaToggle.isOn)
         {
-            Rigidbody[] rbs = estructuraActual.GetComponentsInChildren<Rigidbody>();
-            foreach (Rigidbody rb in rbs)
+            material.nombre = "Madera";
+            material.valor = 1.0f;
+            material.alturaMaximaCaida = 0.5f;
+        }
+        else if (hormigonToggle.isOn)
+        {
+            material.nombre = "Hormigón";
+            material.valor = 1.5f;
+            material.alturaMaximaCaida = 0.4f;
+        }
+        else if (metalToggle.isOn)
+        {
+            material.nombre = "Metal";
+            material.valor = 2.0f;
+            material.alturaMaximaCaida = 0.6f;
+        }
+
+        foreach (Transform child in estructuraActual.transform)
+        {
+            ElementoEstructural elemento = child.GetComponent<ElementoEstructural>();
+            if (elemento != null)
             {
-                rb.velocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
+                elemento.material = material;
+                
+                if (child.name.ToLower().Contains("viga"))
+                {
+                    elemento.tipoElemento = ElementoEstructural.TipoElemento.Viga;
+                }
+                else if (child.name.ToLower().Contains("columna"))
+                {
+                    elemento.tipoElemento = ElementoEstructural.TipoElemento.Columna;
+                }
             }
         }
     }
